@@ -87,6 +87,12 @@
       - ActionCritSuccumb
       - ActionCritFakeDeath
       - ActionCritLastWords
+  - type: BankAccount
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3
+    baseSprintSpeed: 5
+  - type: Physics
+    bodyType: KinematicController
   - type: MobThresholds
     thresholds:
       0: Alive
