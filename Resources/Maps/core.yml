@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 03/21/2026 22:54:17
-  entityCount: 24808
+  time: 03/22/2026 15:27:57
+  entityCount: 24820
 maps:
 - 1
 grids:
@@ -3006,9 +3006,20 @@ entities:
             322: 25,-23
         - node:
             color: '#FFFFFFFF'
+            id: Bushk2
+          decals:
+            13645: 23.071054,35.82662
+        - node:
+            color: '#FFFFFFFF'
             id: Bushk3
           decals:
             321: 26,-21
+            13644: 22.508554,36.63912
+        - node:
+            color: '#FFFFFFFF'
+            id: Bushl2
+          decals:
+            13642: 22.321054,34.748493
         - node:
             color: '#FFFFFFFF'
             id: Bushl4
@@ -3019,6 +3030,7 @@ entities:
             id: Bushm1
           decals:
             13173: -62.27909,-59.459534
+            13643: 22.821054,33.310993
         - node:
             color: '#FFFFFFFF'
             id: Bushm2
@@ -3212,6 +3224,8 @@ entities:
             13546: -20,25
             13548: 5,23
             13554: 9,23
+            13635: 3,28
+            13638: -9,29
         - node:
             color: '#00BFBCFF'
             id: ConcreteTrimInnerNw
@@ -3238,6 +3252,9 @@ entities:
             13545: -18,25
             13550: 7,23
             13551: 11,23
+            13636: 5,28
+            13637: -6,29
+            13641: 1,27
         - node:
             color: '#606060FF'
             id: ConcreteTrimInnerSe
@@ -3272,8 +3289,8 @@ entities:
             13538: -16,29
             13541: -23,27
             13543: -23,24
-            13549: 7,25
-            13552: 11,25
+            13633: 11,25
+            13634: 7,25
         - node:
             color: '#FFFFFFFF'
             id: ConcreteTrimInnerSw
@@ -6359,7 +6376,6 @@ entities:
             4477: -26,30
             4478: -26,28
             4479: -26,29
-            4627: 3,28
             4628: 2,27
             4629: 1,28
             4630: 3,27
@@ -6693,7 +6709,6 @@ entities:
             13457: 16,38
             13462: 17,23
             13466: 12,25
-            13470: 7,25
             13488: -14,40
             13489: -15,39
             13490: -11,36
@@ -6878,6 +6893,8 @@ entities:
             13617: 21,39
             13619: 19,40
             13622: 21,42
+            13639: 3,28
+            13640: -23,25
         - node:
             cleanable: True
             angle: 1.5707963267948966 rad
@@ -9985,6 +10002,12 @@ entities:
             7467: -30,-4
             7468: -30,-3
             7469: -30,-2
+        - node:
+            color: '#FFFFFFFF'
+            id: burnt1
+          decals:
+            13646: 2.334672,43.566704
+            13647: 2.084672,43.972954
         - node:
             cleanable: True
             color: '#FFFFFFFF'
@@ -15019,7 +15042,7 @@ entities:
       pos: 0.5,28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -12842.129
+      secondsUntilStateChange: -13257.841
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15932,7 +15955,7 @@ entities:
       pos: -18.5,-45.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -78259.414
+      secondsUntilStateChange: -78675.125
       state: Opening
     - type: DeviceLinkSink
       invokeCounter: 1
@@ -16737,7 +16760,7 @@ entities:
       pos: -41.5,-28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -77522.81
+      secondsUntilStateChange: -77938.52
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -17579,7 +17602,7 @@ entities:
       pos: -20.5,-6.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -290804.75
+      secondsUntilStateChange: -291220.47
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -17702,7 +17725,7 @@ entities:
       pos: -42.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -78634.516
+      secondsUntilStateChange: -79050.23
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -79000,6 +79023,11 @@ entities:
     - type: Transform
       pos: 22.388512,40.78573
       parent: 2
+  - uid: 24818
+    components:
+    - type: Transform
+      pos: 23.290562,27.65963
+      parent: 2
 - proto: DrinkHotCoco
   entities:
   - uid: 10959
@@ -79047,6 +79075,13 @@ entities:
     components:
     - type: Transform
       pos: 8.516958,16.625814
+      parent: 2
+- proto: DrinkRumBottleFull
+  entities:
+  - uid: 24819
+    components:
+    - type: Transform
+      pos: 23.649937,27.581505
       parent: 2
 - proto: DrinkShotGlass
   entities:
@@ -124544,6 +124579,13 @@ entities:
     - type: Transform
       pos: -33.5,-44.5
       parent: 2
+- proto: PosterContrabandRedRum
+  entities:
+  - uid: 24820
+    components:
+    - type: Transform
+      pos: 24.5,28.5
+      parent: 2
 - proto: PosterContrabandSyndicateRecruitment
   entities:
   - uid: 17161
@@ -143575,7 +143617,7 @@ entities:
       pos: -46.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -18263.81
+      secondsUntilStateChange: -18679.523
       state: Opening
 - proto: SophicScribe
   entities:
@@ -172134,6 +172176,57 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 36.5,-33.5
+      parent: 2
+  - uid: 24809
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 17.5,27.5
+      parent: 2
+  - uid: 24810
+    components:
+    - type: Transform
+      pos: 14.5,29.5
+      parent: 2
+  - uid: 24811
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 14.5,35.5
+      parent: 2
+  - uid: 24812
+    components:
+    - type: Transform
+      pos: 14.5,37.5
+      parent: 2
+  - uid: 24813
+    components:
+    - type: Transform
+      pos: 11.5,37.5
+      parent: 2
+  - uid: 24814
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 6.5,39.5
+      parent: 2
+  - uid: 24815
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 10.5,44.5
+      parent: 2
+  - uid: 24816
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 15.5,44.5
+      parent: 2
+  - uid: 24817
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 17.5,40.5
       parent: 2
 - proto: WoodDoor
   entities:
