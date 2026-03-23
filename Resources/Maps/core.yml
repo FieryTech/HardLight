@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 03/23/2026 15:22:14
-  entityCount: 24843
+  time: 03/23/2026 15:46:19
+  entityCount: 24845
 maps:
 - 1
 grids:
@@ -15090,7 +15090,7 @@ entities:
       pos: 0.5,28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -16788.889
+      secondsUntilStateChange: -16861.094
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15997,7 +15997,7 @@ entities:
       pos: -18.5,-45.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -82206.18
+      secondsUntilStateChange: -82278.38
       state: Opening
     - type: DeviceLinkSink
       invokeCounter: 1
@@ -16802,7 +16802,7 @@ entities:
       pos: -41.5,-28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -81469.58
+      secondsUntilStateChange: -81541.78
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -17644,7 +17644,7 @@ entities:
       pos: -20.5,-6.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -294751.53
+      secondsUntilStateChange: -294823.75
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -17767,7 +17767,7 @@ entities:
       pos: -42.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -82581.28
+      secondsUntilStateChange: -82653.484
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -84008,6 +84008,16 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 69.5,-3.5
       parent: 2
+  - uid: 24844
+    components:
+    - type: Transform
+      pos: 7.5,23.5
+      parent: 2
+  - uid: 24845
+    components:
+    - type: Transform
+      pos: 9.5,23.5
+      parent: 2
 - proto: FirelockGlass
   entities:
   - uid: 11594
@@ -143821,7 +143831,7 @@ entities:
       pos: -46.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -22210.57
+      secondsUntilStateChange: -22282.775
       state: Opening
 - proto: SophicScribe
   entities:
