@@ -119754,6 +119754,12 @@ entities:
     - type: Transform
       pos: 1.5,-64.5
       parent: 2
+    - type: Gateway
+      enabled: True
+    - type: DockingArmGenerator
+      dockingArmGrids:
+      - /Maps/Structures/dock.yml
+      generated: []
 - proto: Gauze
   entities:
   - uid: 14358
