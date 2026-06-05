@@ -4,8 +4,8 @@ meta:
   engineVersion: 274.0.0
   forkId: ""
   forkVersion: ""
-  time: 06/05/2026 10:09:41
-  entityCount: 24687
+  time: 06/05/2026 10:48:31
+  entityCount: 24690
 maps:
 - 1
 grids:
@@ -81506,11 +81506,6 @@ entities:
       parent: 2
 - proto: ComputerWallmountRadar
   entities:
-  - uid: 9582
-    components:
-    - type: Transform
-      pos: 15.5,-58.5
-      parent: 2
   - uid: 24641
     components:
     - type: Transform
@@ -81527,6 +81522,18 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -31.5,-70.5
+      parent: 2
+  - uid: 24688
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 8.5,-69.5
+      parent: 2
+  - uid: 24689
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 37.5,-69.5
       parent: 2
 - proto: ContrabandPallet
   entities:
@@ -92793,16 +92800,6 @@ entities:
       - 11239
       - 11240
       - 11241
-  - uid: 11091
-    components:
-    - type: Transform
-      pos: -9.5,-57.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 11177
-      - 11165
-      - 11175
   - uid: 11092
     components:
     - type: Transform
@@ -92999,6 +92996,11 @@ entities:
       - 11174
       - 11173
       - 11305
+  - uid: 19745
+    components:
+    - type: Transform
+      pos: -11.5,-57.5
+      parent: 2
   - uid: 24487
     components:
     - type: Transform
@@ -93668,7 +93670,6 @@ entities:
       deviceLists:
       - 42
       - 11092
-      - 11091
       - 47
       - 7890
   - uid: 11166
@@ -93758,7 +93759,6 @@ entities:
       deviceLists:
       - 42
       - 11092
-      - 11091
       - 47
       - 7890
   - uid: 11176
@@ -93781,7 +93781,6 @@ entities:
       deviceLists:
       - 42
       - 11092
-      - 11091
       - 47
       - 7890
   - uid: 11178
@@ -143705,6 +143704,11 @@ entities:
       parent: 2
 - proto: RandomPosterAny
   entities:
+  - uid: 9582
+    components:
+    - type: Transform
+      pos: 15.5,-58.5
+      parent: 2
   - uid: 9585
     components:
     - type: Transform
@@ -158065,15 +158069,15 @@ entities:
       parent: 2
 - proto: StationMap
   entities:
+  - uid: 11091
+    components:
+    - type: Transform
+      pos: -9.5,-57.5
+      parent: 2
   - uid: 19744
     components:
     - type: Transform
       pos: 29.5,-1.5
-      parent: 2
-  - uid: 19745
-    components:
-    - type: Transform
-      pos: 16.5,-58.5
       parent: 2
   - uid: 19746
     components:
@@ -158146,7 +158150,12 @@ entities:
   - uid: 24683
     components:
     - type: Transform
-      pos: -11.5,-57.5
+      pos: 40.5,-62.5
+      parent: 2
+  - uid: 24690
+    components:
+    - type: Transform
+      pos: 12.5,-58.5
       parent: 2
 - proto: StationMapAssembly
   entities:
