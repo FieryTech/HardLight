@@ -4,8 +4,8 @@ meta:
   engineVersion: 274.0.0
   forkId: ""
   forkVersion: ""
-  time: 06/05/2026 09:47:06
-  entityCount: 24683
+  time: 06/05/2026 10:09:41
+  entityCount: 24687
 maps:
 - 1
 grids:
@@ -5181,6 +5181,7 @@ entities:
             21477: -13,-60
             21489: -34,-66
             21493: -33,-64
+            21504: 3,-66
         - node:
             cleanable: True
             zIndex: 2
@@ -5605,6 +5606,8 @@ entities:
             21490: -35,-63
             21496: -33,-81
             21499: -33,-61
+            21501: 2,-66
+            21505: -2,-66
         - node:
             cleanable: True
             zIndex: 2
@@ -7191,6 +7194,9 @@ entities:
             21495: -35,-77
             21497: -35,-81
             21498: -33,-60
+            21500: 0,-66
+            21503: 0,-64
+            21506: 2,-65
         - node:
             cleanable: True
             zIndex: 2
@@ -8360,6 +8366,7 @@ entities:
             21486: -33,-72
             21492: -34,-59
             21494: -35,-72
+            21502: 1,-65
         - node:
             cleanable: True
             zIndex: 2
@@ -25747,6 +25754,18 @@ entities:
     - type: DeviceList
       devices:
       - 17163
+  - uid: 24687
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 41.5,-69.5
+      parent: 2
+    - type: DeviceList
+      devices:
+      - 14228
+      - 14062
+      - 14223
+      - 24533
 - proto: AirAlarmFreezer
   entities:
   - uid: 129
@@ -93039,6 +93058,12 @@ entities:
     - type: Transform
       pos: 24.5,-57.5
       parent: 2
+  - uid: 24685
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -29.5,-61.5
+      parent: 2
 - proto: FirelockEdge
   entities:
   - uid: 11111
@@ -116612,6 +116637,11 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 38.5,-67.5
       parent: 2
+    - type: DeviceNetwork
+      configurators:
+      - invalid
+      deviceLists:
+      - 24687
     - type: AtmosPipeColor
       color: '#0335FCFF'
   - uid: 14064
@@ -117930,6 +117960,11 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 40.5,-76.5
       parent: 2
+    - type: DeviceNetwork
+      configurators:
+      - invalid
+      deviceLists:
+      - 24687
     - type: AtmosPipeColor
       color: '#0335FCFF'
   - uid: 24647
@@ -118304,6 +118339,11 @@ entities:
       rot: 3.141592653589793 rad
       pos: 38.5,-76.5
       parent: 2
+    - type: DeviceNetwork
+      configurators:
+      - invalid
+      deviceLists:
+      - 24687
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 14225
@@ -118338,6 +118378,11 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 39.5,-66.5
       parent: 2
+    - type: DeviceNetwork
+      configurators:
+      - invalid
+      deviceLists:
+      - 24687
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 14229
@@ -137532,7 +137577,7 @@ entities:
   - uid: 16879
     components:
     - type: Transform
-      pos: 11.5,-61.5
+      pos: 15.5,-62.5
       parent: 2
   - uid: 16880
     components:
@@ -140944,6 +140989,12 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 8.5,-25.5
+      parent: 2
+  - uid: 24686
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -28.5,-60.5
       parent: 2
 - proto: PrefilledSyringe
   entities:
@@ -152257,6 +152308,14 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -21.5,-21.5
+      parent: 2
+- proto: SignVault
+  entities:
+  - uid: 24684
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -28.5,-61.5
       parent: 2
 - proto: SignVirology
   entities:
