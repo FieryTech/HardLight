@@ -4492,3 +4492,23 @@ Entries:
       message: cryoed traitor objectives now reroll
   id: 475
   time: '2026-06-02T18:45:19.0000000+00:00'
+- author: fenndragon
+  changes:
+    - type: Add
+      message: 'Added secret-secret accent text! '
+    - type: Fix
+      message: Fixed some lag errors on the backend
+    - type: Fix
+      message: Fixed blood replacement system
+    - type: Fix
+      message: 'Fixed Patreon character traits '
+    - type: Fix
+      message: Fixed component saving in apartments
+  id: 476
+  time: '2026-06-04T04:07:32.0000000+00:00'
+- author: Illumos
+  changes:
+    - type: Add
+      message: Technical backing for engraving tools.
+  id: 477
+  time: '2026-06-04T04:14:33.0000000+00:00'
