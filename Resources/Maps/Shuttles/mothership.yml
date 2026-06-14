@@ -4,8 +4,8 @@ meta:
   engineVersion: 274.0.0
   forkId: ""
   forkVersion: ""
-  time: 06/14/2026 11:01:09
-  entityCount: 964
+  time: 06/14/2026 11:55:25
+  entityCount: 968
 maps: []
 grids:
 - 1
@@ -732,6 +732,30 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 14.5,0.5
+      parent: 1
+- proto: AtmosDeviceFanDirectional
+  entities:
+  - uid: 967
+    components:
+    - type: Transform
+      pos: -0.5,-14.5
+      parent: 1
+  - uid: 968
+    components:
+    - type: Transform
+      pos: 1.5,-14.5
+      parent: 1
+- proto: AtmosDeviceFanTiny
+  entities:
+  - uid: 965
+    components:
+    - type: Transform
+      pos: 1.5,-14.5
+      parent: 1
+  - uid: 966
+    components:
+    - type: Transform
+      pos: -0.5,-14.5
       parent: 1
 - proto: Autolathe
   entities:
@@ -3516,8 +3540,6 @@ entities:
     - type: Transform
       pos: 13.5,-0.5
       parent: 1
-    - type: ApcPowerReceiver
-      powerDisabled: True
 - proto: SignalButtonDirectional
   entities:
   - uid: 944
