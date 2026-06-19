@@ -7,6 +7,7 @@
     - id: SnailMigrationLowPop
     - id: CockroachMigration
     - id: MouseMigration
+    #- id: RandomCritterHorde
 
 - type: entityTable
   id: SpicyPestEventsTable
@@ -28,16 +29,15 @@
     earliestStart: 15
     weight: 6
     duration: 50
-  - type: VentCrittersRule
-    entries:
-    - id: MobMouse
-      prob: 0.02
-    - id: MobMouse1
-      prob: 0.02
-    - id: MobMouse2
-      prob: 0.02
-    - id: MobMouseCancer
-      prob: 0.001
+  - type: EventHeat # HardLight
+    cost: 40
+  - type: VentHordeRule
+    table: !type:GroupSelector
+      rolls: !type:RangeNumberSelector
+        range: 1, 10
+      children:
+      - id: MobMouse
+      - id: MobMouseCancer
 # Events always spawn a critter regardless of Probability https://github.com/space-wizards/space-station-14/issues/28480 I added the Rat King to their own event with a player cap.
 
 - type: entity
@@ -52,19 +52,15 @@
     weight: 6
     duration: 50
     minimumPlayers: 30 # Hopefully this is enough for the Rat King's potential Army (it was not, raised from 15 -> 30)
-  - type: VentCrittersRule
-    entries:
-    - id: MobMouse
-      prob: 0.02
-    - id: MobMouse1
-      prob: 0.02
-    - id: MobMouse2
-      prob: 0.02
-    - id: MobMouseCancer
-      prob: 0.001
-    specialEntries:
-    - id: SpawnPointGhostRatKing
-      prob: 0.001
+  - type: EventHeat # HardLight
+    cost: 90
+  - type: VentHordeRule
+    table: !type:GroupSelector
+      rolls: !type:RangeNumberSelector
+        range: 1, 10
+      children:
+      - id: MobMouse
+      - id: SpawnPointGhostRatKing
 
 - type: entity
   id: CockroachMigration
@@ -76,12 +72,17 @@
       path: /Audio/Announcements/attention.ogg
     weight: 6
     duration: 50
-  - type: VentCrittersRule
-    entries:
-    - id: MobCockroach
-      prob: 0.03
-    - id: MobMothroach
-      prob: 0.008
+  - type: EventHeat # HardLight
+    cost: 40
+  - type: VentHordeRule
+    table: !type:GroupSelector
+      rolls: !type:RangeNumberSelector
+        range: 1, 10
+      children:
+      - id: MobCockroach
+      - id: MobMothroach
+      - id: MobSnailMoth
+      - id: MobGlockroach
 
 - type: entity
   id: SnailMigrationLowPop
@@ -93,14 +94,16 @@
       path: /Audio/Announcements/attention.ogg
     weight: 6
     duration: 50
-  - type: VentCrittersRule
-    entries:
-    - id: MobSnail
-      prob: 0.02
-    - id: MobSnailSpeed
-      prob: 0.002
-    - id: MobSnailMoth
-      prob: 0.002
+  - type: EventHeat # HardLight
+    cost: 40
+  - type: VentHordeRule
+    table: !type:GroupSelector
+      rolls: !type:RangeNumberSelector
+        range: 1, 10
+      children:
+      - id: MobSnail
+      - id: MobSnailSpeed
+      - id: MobSnailMoth
 
 - type: entity
   id: SnailMigration
@@ -114,16 +117,17 @@
     weight: 6
     duration: 50
     minimumPlayers: 30
-  - type: VentCrittersRule
-    entries:
-    - id: MobSnail
-      prob: 0.02
-    - id: MobSnailSpeed
-      prob: 0.002
-    - id: MobSnailMoth
-      prob: 0.002
-    - id: MobSnailInstantDeath
-      prob: 0.00001 #  ~ 1:2000 snails
+  - type: EventHeat # HardLight
+    cost: 40
+  - type: VentHordeRule
+    table: !type:GroupSelector
+      rolls: !type:RangeNumberSelector
+        range: 1, 3
+      children:
+      - id: MobSnail
+      - id: MobSnailSpeed
+      - id: MobSnailMoth
+      - id: MobSnailInstantDeath
 
 - type: entity
   id: IrradiatedPests
@@ -136,6 +140,8 @@
     earliestStart: 15
     weight: 4
     duration: 50
+  - type: EventHeat # HardLight
+    cost: 60
   - type: RadCrittersRule
     entries:
     - id: dreadtalonbase

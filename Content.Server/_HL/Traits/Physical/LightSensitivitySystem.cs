@@ -1,6 +1,8 @@
 using Content.Server._Starlight;
+using Content.Server._Starlight.Shadekin;
 using Content.Shared._HL.Traits.Physical;
 using Content.Shared._Starlight;
+using Content.Shared._Starlight.Shadekin;
 using Content.Shared.Alert;
 using Content.Shared.Damage;
 using Content.Shared.Movement.Systems;
@@ -68,13 +70,13 @@ public sealed class LightSensitivitySystem : EntitySystem
         }
     }
 
-    private static float DiscretizeExposure(float raw)
+    private static float DiscretizeExposure(float raw) // However made this, please look at ShadekinComp Thresholds, PLEASE!
     {
-        if (raw >= 15f) return 4f;
-        if (raw >= 10f) return 3f;
-        if (raw >= 5f) return 2f;
-        if (raw >= 0.8f) return 1f;
-        return 0f;
+        if (raw >= 15f) return 5f;
+        if (raw >= 10f) return 4f;
+        if (raw >= 5f) return 3f;
+        if (raw >= 0.8f) return 2f;
+        return 1f;
     }
 
     private void ApplyBurnDamage(EntityUid uid, LightSensitivityComponent comp)
